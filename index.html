@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Mooli&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        barlow: "'Barlow' , sans-serif",
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                }
+            }
+        }
+
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Mooli', sans-serif;
+            }
+        }
+        </style>
+</head>
+
+<body class="max-w-screen-2xl mx-auto">
+    <!-- hero section -->
+    <section id="home" class="w-full h-screen md:h-[800px] bg-gradient-to-b from-purple-50 to-purple-100">
+        <!-- nav -->
+        <nav class="nav container">
+            <div class="flex items-center justify-between gap-1 mx-4">
+                <!-- logo -->
+                <div class="flex items-center gap-x-2 py-4">
+                    <img class="w-12 h-12 rounded-full bg-cover bg-center " src="images/logo.png" alt="LOGO">
+                    <h2 class="text-lg text-black font-semibold ">Car Rental</h2>
+                </div>
+                <!--mobile menu -->
+                <div id="nav-menu"
+                    class=" hidden fixed bg-white top-0 left-0 w-full h-screen px-12 py-24 transition-all duration-500 cursor-pinter">
+                    <ul class="flex flex-col items-center justify-between gap-y-4">
+                        <li>
+                            <a class="nav__link text-gray-800 text-lg tracking-wide font-light hover:text-purple-300"
+                                href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-gray-800 text-lg tracking-wide font-light hover:text-purple-300"
+                                href="#howitwork">How It
+                                Works</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-gray-800 text-lg tracking-wide font-light hover:text-purple-300"
+                                href="#rentaldeals">Rental
+                                Deals</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-gray-800 text-lg tracking-wide font-light hover:text-purple-300"
+                                href="#whychooseus">Why
+                                Choose Us</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-gray-800 text-lg tracking-wide font-light hover:text-purple-300"
+                                href="#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-gray-800 text-lg tracking-wide font-light hover:text-purple-300"
+                                href="#newarrivals">New
+                                Arrivals</a>
+                        </li>
+                        <hr class="w-full h-[2px] bg-gray-800">
+                        <li>
+                            <a class="nav__link text-gray-800 text-lg tracking-wide font-light hover:text-purple-300"
+                                href="#register">Register</a>
+                        </li>
+                        <button
+                            class="nav__link px-10 py-4 text-center text-white bg-purple-500 text-md rounded-2xl hover:scale-110">
+                            Log In
+                        </button>
+                    </ul>
+                    <!-- close nav  -->
+                    <div id="nav-close" class="absolute top-7 right-4 cursor-pinter transition-all duration-500 ">
+                        <svg class="w-6 h-6 text-black fill-current cursor-pointer  transition-all duration-500"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                            </path>
+                        </svg>
+
+                    </div>
+                </div>
+                <!-- menu btns -->
+                <div class="flex items-center gap-1">
+                    <!-- cart  -->
+                    <div>
+                        <svg class="w-6 h-6 text-black fill-current cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <!-- menu -->
+                    <div id="nav-toggle" class=" cursor-pinter transition-all duration-500 ">
+                        <svg class="Home w-6 h-6 text-black fill-current cursor-pointer  transition-all duration-500"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                        </svg>
+                    </div>
+                </div>
+        </nav>
+        <header>
+            <!-- fast div -->
+            <div
+                class="w-80 h-12 md:w-96 md:h-16 rounded-full bg-white/90 mx-auto flex items-center gap-6  px-4 md:px-8 mt-4 mb-6">
+                <svg class="w-6 h-6 md:w-8 md:h-8 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M2 8.99997H5V21H2C1.44772 21 1 20.5523 1 20V9.99997C1 9.44769 1.44772 8.99997 2 8.99997ZM7.29289 7.70708L13.6934 1.30661C13.8693 1.13066 14.1479 1.11087 14.3469 1.26016L15.1995 1.8996C15.6842 2.26312 15.9026 2.88253 15.7531 3.46966L14.5998 7.99997H21C22.1046 7.99997 23 8.8954 23 9.99997V12.1043C23 12.3656 22.9488 12.6243 22.8494 12.8658L19.755 20.3807C19.6007 20.7554 19.2355 21 18.8303 21H8C7.44772 21 7 20.5523 7 20V8.41419C7 8.14897 7.10536 7.89462 7.29289 7.70708Z">
+                    </path>
+                </svg>
+                <p class="text-sm md:text-md font-semibold tracking-wide text-purple-300">100% Trusted Car rental
+                    platform</p>
+            </div>
+            <!-- main -->
+            <div class="">
+                <h1 class=" px-12  text-center text-2xl md:text-4xl font-bold tracking-wide">Fast And Easy Way
+                    To Rent A
+                    Car
+                </h1>
+                <div class="w-80 h-64 md:w-[450px] md:h-80 mx-auto my-4">
+                    <div>
+                        <img class="" src="images/car.png" alt="NO FOUND">
+                    </div>
+                </div>
+            </div>
+            <!-- three boxes -->
+            <div class="flex items-center justify-center gap-4 mx-8">
+                <!-- 1 -->
+                <div
+                    class="w-28 h-24 bg-white rounded-lg flex flex-col items-center py-4 gap-2 border-2 border-purple-300">
+                    <svg class="w-8 h-8 stroke-1 stroke-purple-300" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M19 20H5V21C5 21.5523 4.55228 22 4 22H3C2.44772 22 2 21.5523 2 21V11L4.4805 5.21216C4.79566 4.47679 5.51874 4 6.31879 4H17.6812C18.4813 4 19.2043 4.47679 19.5195 5.21216L22 11V21C22 21.5523 21.5523 22 21 22H20C19.4477 22 19 21.5523 19 21V20ZM20 13H4V18H20V13ZM4.17594 11H19.8241L17.6812 6H6.31879L4.17594 11ZM6.5 17C5.67157 17 5 16.3284 5 15.5C5 14.6716 5.67157 14 6.5 14C7.32843 14 8 14.6716 8 15.5C8 16.3284 7.32843 17 6.5 17ZM17.5 17C16.6716 17 16 16.3284 16 15.5C16 14.6716 16.6716 14 17.5 14C18.3284 14 19 14.6716 19 15.5C19 16.3284 18.3284 17 17.5 17Z">
+                        </path>
+                    </svg>
+                    <p class="text-sm text-purple-400">Cars</p>
+                </div>
+                <!-- 2 -->
+                <div class="w-28 h-24 bg-white rounded-lg flex flex-col items-center py-4 gap-2">
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M19 20H5V21C5 21.5523 4.55228 22 4 22H3C2.44772 22 2 21.5523 2 21V11L4.4805 5.21216C4.79566 4.47679 5.51874 4 6.31879 4H17.6812C18.4813 4 19.2043 4.47679 19.5195 5.21216L22 11V21C22 21.5523 21.5523 22 21 22H20C19.4477 22 19 21.5523 19 21V20ZM20 13H4V18H20V13ZM4.17594 11H19.8241L17.6812 6H6.31879L4.17594 11ZM6.5 17C5.67157 17 5 16.3284 5 15.5C5 14.6716 5.67157 14 6.5 14C7.32843 14 8 14.6716 8 15.5C8 16.3284 7.32843 17 6.5 17ZM17.5 17C16.6716 17 16 16.3284 16 15.5C16 14.6716 16.6716 14 17.5 14C18.3284 14 19 14.6716 19 15.5C19 16.3284 18.3284 17 17.5 17Z">
+                        </path>
+                    </svg>
+                    <p class="text-sm">Electric Cars</p>
+                </div>
+                <!-- 3 -->
+                <div class="w-28 h-24 bg-white rounded-lg flex flex-col items-center py-4 gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M8.96456 18C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456ZM15 7H3V15.0505C3.63526 14.4022 4.52066 14 5.5 14C6.8962 14 8.10145 14.8175 8.66318 16H14.3368C14.5045 15.647 14.7296 15.3264 15 15.0505V7ZM17 13H21V12.715L18.9917 10H17V13ZM17.5 19C18.1531 19 18.7087 18.5826 18.9146 18C18.9699 17.8436 19 17.6753 19 17.5C19 16.6716 18.3284 16 17.5 16C16.6716 16 16 16.6716 16 17.5C16 17.6753 16.0301 17.8436 16.0854 18C16.2913 18.5826 16.8469 19 17.5 19ZM7 17.5C7 16.6716 6.32843 16 5.5 16C4.67157 16 4 16.6716 4 17.5C4 17.6753 4.03008 17.8436 4.08535 18C4.29127 18.5826 4.84689 19 5.5 19C6.15311 19 6.70873 18.5826 6.91465 18C6.96992 17.8436 7 17.6753 7 17.5Z">
+                        </path>
+                    </svg>
+                    <p class="text-sm">Vans</p>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- section 2 -->
+    <section>
+        <!-- rent menu -->
+        <div
+            class="w-80 h-[500px] bg-gradient-to-b from-purple-50 to-purple-100 rounded-2xl my-8 flex flex-col items-center mx-auto">
+            <!-- Where to pick up? -->
+            <div>
+                <h3 class="text-xl text-center font-semibold tracking-wide mt-8 mb-4">Where to pick up</h3>
+                <input type="text" name="text" id="text" placeholder="Enter your City, Airport or Address."
+                    class="w-72 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
+            </div>
+            <!-- Pick up date -->
+            <div>
+                <h3 class="text-xl text-center font-semibold tracking-wide mt-8 mb-4">Pick up date</h3>
+                <div>
+                    <input type="date" name="date" id="date" placeholder="dd/mm/yyyy"
+                        class="w-40 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
+                    <input type="time" name="time" id="time" placeholder="11:00 am"
+                        class="w-32 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
+                </div>
+            </div>
+            <!-- Return date -->
+            <div>
+                <h3 class="text-xl text-center font-semibold tracking-wide mt-8 mb-4">Return date</h3>
+                <div>
+                    <input type="date" name="date" id="date" placeholder="dd/mm/yyyy"
+                        class="w-40 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
+                    <input type="time" name="time" id="time" placeholder="11:00 am"
+                        class="w-32 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
+                </div>
+            </div>
+            <!-- button -->
+            <button class="px-12 py-4 bg-purple-500 text-white text-md rounded-lg my-12 hover:scale-110">Search</button>
+        </div>
+
+    </section>
+
+    <script src=" main.js">
+    </script>
+</body>
+
+</html>
