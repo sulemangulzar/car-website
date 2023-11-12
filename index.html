@@ -45,7 +45,7 @@
             <div class="flex items-center justify-between gap-1 mx-4">
                 <!-- logo -->
                 <div class="flex items-center gap-x-2 py-4">
-                    <img class="w-12 h-12 rounded-full bg-cover bg-center " src="images/logo.png" alt="LOGO">
+                    <img class="w-20 h-20 rounded-full bg-cover bg-center " src="images/logo.png" alt="LOGO">
                     <h2 class="text-md text-black font-semibold ">Car Rental</h2>
                 </div>
                 <!--mobile menu -->
@@ -124,14 +124,14 @@
         <header>
             <!-- fast div -->
             <div
-                class="w-80 h-12 md:w-96 md:h-16 rounded-full bg-white/90 mx-auto flex items-center gap-6  px-4 md:px-8 mt-4 mb-6">
+                class="w-80 h-12 md:w-96 md:h-12 rounded-full bg-white/90 mx-auto flex items-center gap-6  px-4 md:px-8 mt-4 mb-6">
                 <svg class="w-6 h-6 md:w-8 md:h-8 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24">
                     <path
                         d="M2 8.99997H5V21H2C1.44772 21 1 20.5523 1 20V9.99997C1 9.44769 1.44772 8.99997 2 8.99997ZM7.29289 7.70708L13.6934 1.30661C13.8693 1.13066 14.1479 1.11087 14.3469 1.26016L15.1995 1.8996C15.6842 2.26312 15.9026 2.88253 15.7531 3.46966L14.5998 7.99997H21C22.1046 7.99997 23 8.8954 23 9.99997V12.1043C23 12.3656 22.9488 12.6243 22.8494 12.8658L19.755 20.3807C19.6007 20.7554 19.2355 21 18.8303 21H8C7.44772 21 7 20.5523 7 20V8.41419C7 8.14897 7.10536 7.89462 7.29289 7.70708Z">
                     </path>
                 </svg>
-                <p class="text-sm md:text-md font-semibold tracking-wide text-purple-300">100% Trusted Car rental
+                <p class="text-sm md:text-md font-normal tracking-wide text-purple-300">100% Trusted Car rental
                     platform</p>
             </div>
             <!-- main -->
@@ -185,7 +185,7 @@
     <section>
         <!-- rent menu -->
         <div
-            class="w-80 h-[500px] bg-gradient-to-b from-purple-50 to-purple-100 rounded-2xl my-8 flex flex-col items-center mx-auto">
+            class="w-80 md:w-96 h-[500px] xl:w-[90%] 2xl:w-[80%] xl:h-40 bg-gradient-to-b from-purple-50 to-purple-100 rounded-2xl my-8 flex flex-col xl:flex-row items-center mx-auto xl:gap-x-4 xl:px-4">
             <!-- Where to pick up? -->
             <div>
                 <h3 class="text-xl text-center font-semibold tracking-wide mt-8 mb-4">Where to pick up</h3>
@@ -199,7 +199,7 @@
                     <input type="date" name="date" id="date" placeholder="dd/mm/yyyy"
                         class="w-40 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
                     <input type="time" name="time" id="time" placeholder="11:00 am"
-                        class="w-32 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
+                        class="w-36 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
                 </div>
             </div>
             <!-- Return date -->
@@ -209,13 +209,77 @@
                     <input type="date" name="date" id="date" placeholder="dd/mm/yyyy"
                         class="w-40 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
                     <input type="time" name="time" id="time" placeholder="11:00 am"
-                        class="w-32 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
+                        class="w-36 px-4 py-2 text-sm rounded-md border-[1px] border-gray-300 focus:border-none">
                 </div>
             </div>
             <!-- button -->
             <button class="px-12 py-4 bg-purple-500 text-white text-md rounded-lg my-12 hover:scale-110">Search</button>
         </div>
+        <!-- How it work -->
+        <div class="flex flex-col items-center mt-12">
+            <h1 class="text-3xl text-center font-semibold tracking-wide">How It Works</h1>
+            <p class="w-[350px] md:w-[450px] text-sm text-center text-gray-800 font-light px-2 py-4 ">From its medieval
+                origine to
+                the digital
+                era
+                Easily
+                build waiting rooms readable English many desktop
+                publishing
+            </p>
+        </div>
+        <!-- 3 divs  -->
+        <div class="flex flex-col xl:flex-row items-center justify-center gap-24 my-4 mt-12">
+            <!-- location div  -->
+            <div class="text-center">
+                <div class=" w-20 h-20 rounded-xl bg-purple-200/40 p-4 mx-auto">
+                    <svg class="w-12 h-12 mx-auto text-purple-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+                        </path>
+                    </svg>
 
+                </div>
+                <h2 class="text-xl text-semibold p-4 ">Choose Location</h2>
+                <p class=" w-[300px] text-sm text-center text-gray-800 font-light px-2 ">Lorem ipsum dolor sit, amet
+                    consectetur
+                    adipisicing elit. Illo aperiam perferendis dicta possimus </p>
+            </div>
+
+            <!-- pick up div  -->
+            <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-amber-200/40 p-4 mx-auto">
+                    <svg class="w-12 h-12 mx-auto text-amber-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M2 11H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V11ZM17 3H21C21.5523 3 22 3.44772 22 4V9H2V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3Z">
+                        </path>
+                    </svg>
+
+                </div>
+                <h2 class="text-xl text-semibold p-4 ">Pick-up Date</h2>
+                <p class=" w-[300px] text-sm text-center text-gray-800 font-light px-2 ">Lorem ipsum dolor sit, amet
+                    consectetur
+                    adipisicing elit. Illo aperiam perferendis dicta possimus
+                </p>
+            </div>
+            <!-- car div  -->
+            <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-rose-200/40 p-4 mx-auto">
+                    <svg class="w-12 h-12 mx-auto text-rose-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M19 20H5V21C5 21.5523 4.55228 22 4 22H3C2.44772 22 2 21.5523 2 21V12L4.51334 5.29775C4.80607 4.51715 5.55231 4 6.386 4H17.614C18.4477 4 19.1939 4.51715 19.4867 5.29775L22 12V21C22 21.5523 21.5523 22 21 22H20C19.4477 22 19 21.5523 19 21V20ZM4.136 12H19.864L17.614 6H6.386L4.136 12ZM6.5 17C7.32843 17 8 16.3284 8 15.5C8 14.6716 7.32843 14 6.5 14C5.67157 14 5 14.6716 5 15.5C5 16.3284 5.67157 17 6.5 17ZM17.5 17C18.3284 17 19 16.3284 19 15.5C19 14.6716 18.3284 14 17.5 14C16.6716 14 16 14.6716 16 15.5C16 16.3284 16.6716 17 17.5 17Z">
+                        </path>
+                    </svg>
+
+                </div>
+                <h2 class="text-xl text-semibold p-4 ">Book Your Date</h2>
+                <p class=" w-[300px] text-sm text-center text-gray-800 font-light px-2 ">Lorem ipsum dolor sit, amet
+                    consectetur
+                    adipisicing elit. Illo aperiam perferendis dicta possimus </p>
+            </div>
+        </div>
     </section>
 
     <script src=" main.js">
